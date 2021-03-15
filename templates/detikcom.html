@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+<h2>Detikcom</h2>
+<div class="container">
+  <div class="card-columns">
+
+    {% for datas in data %}
+    <div class="card">
+      <a href="#">
+      <img class="card-img-top" src={{ datas['gambar'] }} data-src={{ datas['gambar'] }} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ datas['judul'] }}</h5>
+        <p class="card-text">{{ datas['desc'] }}</p>
+        <a href={{ datas['link'] }} class="btn btn-info" role="button" target="_blank" id="modal">Go Link</a>
+        <p class="card-text"><small class="text-muted"><i class="fas fa-calendar-alt"></i>{{ datas['waktu'] }}</small></p>
+      </div>
+      </a>
+     </div>
+     {% endfor %}
+
+  </div>
+</div>
+
+{% endblock content %}
