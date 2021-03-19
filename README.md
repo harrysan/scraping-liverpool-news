@@ -6,6 +6,6 @@ Each news about liverpool.
 For the link can be seen in each file with variable URL.
 
 Scraping will take the title, image, description, link website and time.
-For website templates using django and scraping using python.
+For website templates using flask and scraping using python.
 
 Thank you.
